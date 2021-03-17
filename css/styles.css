@@ -19,8 +19,8 @@ body {
     text-decoration: none;
     color: inherit;
 }
-.header .link:focus,
-.header .link:hover {
+.header  .link:focus,
+.header  .link:hover {
     color: var(--logo-button-color);
 }
 .list {
@@ -42,8 +42,9 @@ body {
 .main-button:focus {
     background-color: var(--button-hover-color);
 }
-
-.header-logo {
+.header .logo {
+    text-decoration: none;
+    color: inherit;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -58,6 +59,12 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+.nav .link {
+    color: var(--header-color);
+}
+.nav .link.current {
+    color: var(--logo-button-color);
 }
 .hero {
     background-color: var(--background-color);
@@ -125,7 +132,8 @@ body {
 .adress-list {
     font-style: normal;
 }
-.adress {
+.adress-list .link:hover,
+.adress-list .link:focus {
     color: var(--hero-text-color);
 }
 .portpholio-button { 
@@ -135,6 +143,10 @@ body {
     text-align: center;
     color: var(--header-color);
     background-color: var(--ligth-bg-color);
+}
+.portpholio-button.current {
+    background-color: var(--logo-button-color);
+    color: var(--hero-text-color);
 }
 .portpholio-button:hover,
 .portpholio-button:focus {
@@ -153,4 +165,4 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-}   
+}
